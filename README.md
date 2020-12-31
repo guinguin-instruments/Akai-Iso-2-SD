@@ -18,8 +18,6 @@ You will need th following software :
 
 ### Put the iso on the SD-Card
 
-There are mutliple solution to this, I have used the first 2 following solutions with success : 
-
 #### 1 - With the iso file burned onto a real cdrom
 - Burn a cdrom from the Akai iso file
 - `diskutil list` to list the newly burnt cdrom (ie : /dev/disk7s0 : disk 7, partition '0').
@@ -31,6 +29,3 @@ There are mutliple solution to this, I have used the first 2 following solutions
 - `diskutil list` to list the newly virtual cdrom (ie : /dev/disk7s0 : disk 7, partition '0').
 - Convert the cdrom partition to a tar file : `sudo akaiutildisk2tar /dev/disk7s0 cdrom-title.tar`
 - Access the first partition of you SD-Card : `sudo akaiutil  /dev/disk2s1` , format it `formathd1 60M` and write your data `tarx1 cdrom-title.tar`
-
-#### 3 - Write the iso directly to the SD-Card partition
-- sudo dd if=image1.iso of=/dev/disk2s1
