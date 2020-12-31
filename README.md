@@ -1,11 +1,18 @@
 # Akai-Iso-2-SD
 
-Describe the process of burning an Akai formated cdrom/iso to an sd-card than can later be used by an SCSI-2-SD reader.
-This process has been sucessfully tested for burning AKAI S1000 iso images.
-You will need th following software : 
-- akaiutil : https://sourceforge.net/projects/akaiutil/files/akaiutil-4.4.2Darwin.zip/download
-- akaiutildisk2tar : https://sourceforge.net/projects/akaiutil/files/Utilities/akaiutildisk2tar/akaiutildisk2tar-3.8.5Darwin.zip/download
-- Daemon-Tools (if you don't want to brun real cdrom) : https://www.daemon-tools.cc/
+Describe the process of burning an Akai formated cdrom/iso to an sd-card than can later be used by a SCSI-2-SD reader.
+This process has been sucessfully tested for burning AKAI S1000 iso image ot be read on an Akai S1000 using SCS2SD v5.
+
+You will need the following software : 
+- *akaiutil* : https://sourceforge.net/projects/akaiutil/files/akaiutil-4.4.2Darwin.zip/download
+- *akaiutildisk2tar* : https://sourceforge.net/projects/akaiutil/files/Utilities/akaiutildisk2tar/akaiutildisk2tar-3.8.5Darwin.zip/download
+- *Daemon-Tools* (if you don't want to brun real cdrom) : https://www.daemon-tools.cc/
+
+This repositoy also contains the following needed files : 
+- *scsi2sd-conf.xml* : to configure your SCSI2SD v5 has 4 scsi devices.
+- *scsi2sd_4x800M.partitions.img* : to create a 4 partitions SD-Card.
+
+
 
 
 ### Prepare the SD-Card
